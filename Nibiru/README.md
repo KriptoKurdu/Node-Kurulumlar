@@ -17,13 +17,13 @@
 
 #### İlk kurulum
 
-```
+```bash
 source <(curl -s https://raw.githubusercontent.com/KriptoKurdu/Node-Kurulumlar/main/Nibiru/Nibiru-V1.sh)
 ```
 
 #### Cüzdan Oluşturma ( name yerine bir cüzdan ismi yazın)
 
-```
+```bash
 nibid keys add name
 
 ```
