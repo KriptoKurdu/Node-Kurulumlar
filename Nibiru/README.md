@@ -17,20 +17,20 @@
 
 #### İlk kurulum
 
-```bash
+```
 source <(curl -s https://raw.githubusercontent.com/KriptoKurdu/Node-Kurulumlar/main/Nibiru/Nibiru-V1.sh)
 ```
 
 #### Cüzdan Oluşturma ( name yerine bir cüzdan ismi yazın)
 
-```bash
+```
 nibid keys add name
 
 ```
 
 #### Validator
 
-```bash
+```
 nibid tx staking create-validator \
 --amount 10000000unibi \
 --commission-max-change-rate "0.1" \
@@ -46,17 +46,17 @@ nibid tx staking create-validator \
 ```
 
 #### Delegatör olma
-```bash
+```
 nibid tx staking delegate validator_adresi 10000000unibi --from wallet --chain-id nibiru-testnet-1 --fees 5000unibi
 ```
 
 #### Senkronizasyon kontrolü
-```bash
+```
 nibid status 2>&1 | jq .SyncInfo
 ```
 
 #### Cüzdan kontolü ( name yerine bir cüzdan ismi yazın)
-```bash
+```
 nibid keys show name -a 
 ```
 
