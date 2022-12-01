@@ -3,6 +3,18 @@
 
 
 
+
+## Minimum Sistem Gereksinimleri
+
+**RAM:** 8 GP
+
+**CPU:** 4 CPU
+
+**SSD:** 200 GB
+
+
+
+
 #### İlk kurulum
 
 ```
