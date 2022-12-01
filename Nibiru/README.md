@@ -14,10 +14,7 @@ source <(curl -s https://raw.githubusercontent.com/KriptoKurdu/Node-Kurulumlar/m
 ```
 nibid keys add name
 
-nibid keys show name -a 
 ```
-
-
 
 #### Validator
 
@@ -37,15 +34,17 @@ nibid tx staking create-validator \
 ```
 
 #### Delegatör olma
-
 ```
 nibid tx staking delegate validator_adresi 10000000unibi --from wallet --chain-id nibiru-testnet-1 --fees 5000unibi
-
 ```
-#### Senkronizasyon kontrolü
 
+#### Senkronizasyon kontrolü
 ```
 nibid status 2>&1 | jq .SyncInfo
+```
 
+#### Cüzdan kontolü ( name yerine bir cüzdan ismi yazın)
+```
+nibid keys show name -a 
 ```
 
