@@ -6,9 +6,9 @@
 
 ## Minimum Sistem Gereksinimleri
 
-**RAM:** 8 GP
-
 **CPU:** 4 CPU
+
+**RAM:** 8 GB
 
 **SSD:** 200 GB
 
@@ -30,7 +30,7 @@ nibid keys add name
 
 #### Validator
 
-```
+```bash
 nibid tx staking create-validator \
 --amount 10000000unibi \
 --commission-max-change-rate "0.1" \
