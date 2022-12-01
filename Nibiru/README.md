@@ -5,7 +5,7 @@
 
 #### İlk kurulum
 
-```http
+```
 source <(curl -s https://raw.githubusercontent.com/KriptoKurdu/Node-Kurulumlar/main/Nibiru/Nibiru-V1.sh)
 ```
 
