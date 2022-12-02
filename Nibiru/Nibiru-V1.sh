@@ -32,6 +32,7 @@ fi
 
 # MONİKER AD BELİRLEME
 read -p "Moniker Adinizi Giriniz : " NODENAME
+echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 
 # REPO YÜKLE
 
@@ -69,17 +70,15 @@ sed -i 's/minimum-gas-prices =.*/minimum-gas-prices = "0.025unibi"/g' $HOME/.nib
 
 #Blok süresi ayarlama
 CONFIG_TOML="$HOME/.nibid/config/config.toml"
-sed -i 's/timeout_propose =.*/timeout_propose = "100ms"/g' $CONFIG_TOML
-sed -i 's/timeout_propose_delta =.*/timeout_propose_delta = "500ms"/g' $CONFIG_TOML
-sed -i 's/timeout_prevote =.*/timeout_prevote = "100ms"/g' $CONFIG_TOML
-sed -i 's/timeout_prevote_delta =.*/timeout_prevote_delta = "500ms"/g' $CONFIG_TOML
-sed -i 's/timeout_precommit =.*/timeout_precommit = "100ms"/g' $CONFIG_TOML
-sed -i 's/timeout_precommit_delta =.*/timeout_precommit_delta = "500ms"/g' $CONFIG_TOML
-sed -i 's/timeout_commit =.*/timeout_commit = "1s"/g' $CONFIG_TOML
-sed -i 's/skip_timeout_commit =.*/skip_timeout_commit = false/g' $CONFIG_TOML
-sed -i.default "s/pruning *=.*/pruning = \"custom\"/g" $HOME/.nibid/config/app.toml
-sed -i "s/pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/g" $HOME/.nibid/config/app.toml
-sed -i "s/pruning-interval *=.*/pruning-interval = \"10\"/g" $HOME/.nibid/config/app.toml
+ sed -i 's/timeout_propose =.*/timeout_propose = "100ms"/g' $CONFIG_TOML
+ sed -i 's/timeout_propose_delta =.*/timeout_propose_delta = "500ms"/g' $CONFIG_TOML
+ sed -i 's/timeout_prevote =.*/timeout_prevote = "100ms"/g' $CONFIG_TOML
+ sed -i 's/timeout_prevote_delta =.*/timeout_prevote_delta = "500ms"/g' $CONFIG_TOML
+ sed -i 's/timeout_precommit =.*/timeout_precommit = "100ms"/g' $CONFIG_TOML
+ sed -i 's/timeout_precommit_delta =.*/timeout_precommit_delta = "500ms"/g' $CONFIG_TOML
+ sed -i 's/timeout_commit =.*/timeout_commit = "1s"/g' $CONFIG_TOML
+ sed -i 's/skip_timeout_commit =.*/skip_timeout_commit = false/g' $CONFIG_TOML
+
  
  
 pruning="custom"
