@@ -47,7 +47,7 @@ nibid tx staking create-validator \
 
 #### Delegatör olma
 ```
-nibid tx staking delegate validator_adresi 95000000unibi --from wallet --chain-id nibiru-testnet-1 --fees 5000unibi
+nibid tx staking delegate validator_adresi 99500000unibi --from wallet --chain-id nibiru-testnet-1 --fees 5000unibi
 ```
 
 #### Senkronizasyon kontrolü
