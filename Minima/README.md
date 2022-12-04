@@ -62,11 +62,6 @@ sudo systemctl enable containerd.service
 docker run -d --restart unless-stopped --name watchtower -e WATCHTOWER_CLEANUP=true -e WATCHTOWER_TIMEOUT=60s -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 ```
 
-#### Kontrol
-```
-docker ps
-```
-
 #### Minima terminaline giriş
 ```
 docker exec -it minima9001 minima
