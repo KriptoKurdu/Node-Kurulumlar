@@ -196,3 +196,39 @@ gitopiad tx staking create-validator \
 gitopiad tx staking delegate <validatöradresi> 10000000utlore --from=cüzdanAdiniz --chain-id=gitopia-janus-testnet-2 --fees=250utlore
 ```
 
+
+
+#### cüzdan oluşturma
+```
+gitopiad keys add cüzdanAdiniz
+```
+
+#### cüzdan kelimeleri gösterme
+```
+gitopiad keys mnemonic CuzdanAdi
+```
+
+#### Varolan cüzdanı ekleme
+```
+gitopiad keys add kkwallet --recover
+``` 
+
+
+#### Node durdurma
+```
+sudo systemctl stop gitopiad
+``` 
+
+#### Node tekrar başlatma
+```
+sudo systemctl restart gitopiad
+``` 
+
+#### Node Aktiflik kontrol
+```
+sudo systemctl status gitopiad
+``` 
+
+
+
+
