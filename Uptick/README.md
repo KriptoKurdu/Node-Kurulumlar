@@ -5,7 +5,7 @@
 
 **RAM:** 8 GB
 
-**SSD:** 2000 GB
+**SSD:** 200 GB
 
 ## Moniker adı belirleme
 ```
