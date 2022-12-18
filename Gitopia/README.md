@@ -203,10 +203,7 @@ gitopiad tx staking delegate <validatöradresi> 10000000utlore --from=cüzdanAdi
 gitopiad keys add cüzdanAdiniz
 ```
 
-#### cüzdan kelimeleri gösterme
-```
-gitopiad keys mnemonic CuzdanAdi
-```
+
 
 #### Varolan cüzdanı ekleme
 ```
