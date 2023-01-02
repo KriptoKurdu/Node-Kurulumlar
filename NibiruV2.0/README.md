@@ -57,3 +57,25 @@ Node durdurmak için
 ```
 sudo systemctl stop nibid
 ```
+
+
+
+#### İlk Defa VALİDATOR Oluşturacaklar için
+'''
+nibid tx staking create-validator \
+--amount=1000000unibi \
+--pubkey=$(nibid tendermint show-validator) \
+--moniker=monikerAdiniz \
+--chain-id=nibiru-testnet-2 \
+--commission-rate=0.05 \
+--commission-max-rate=0.20 \
+--commission-max-change-rate=0.01 \
+--min-self-delegation=1 \
+--from=cuzdanAdiniz \
+--gas-adjustment=1.4 \
+--gas=auto \
+--gas-prices=0.025unibi \
+-y
+
+'''
+
