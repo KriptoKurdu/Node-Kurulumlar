@@ -61,7 +61,7 @@ sudo systemctl stop nibid
 
 
 #### İlk Defa VALİDATOR Oluşturacaklar için
-'''
+```
 nibid tx staking create-validator \
 --amount=1000000unibi \
 --pubkey=$(nibid tendermint show-validator) \
@@ -76,6 +76,6 @@ nibid tx staking create-validator \
 --gas=auto \
 --gas-prices=0.025unibi \
 -y
+```
 
-'''
 
