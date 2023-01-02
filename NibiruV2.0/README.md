@@ -60,7 +60,7 @@ sudo systemctl stop nibid
 
 
 
-#### İlk Defa VALİDATOR Oluşturacaklar için
+#### İlk Defa VALİDATOR Oluşturacaklar için ('cuzdanAdiniz' Kısmını kendinize göre değiştirin)
 ```
 nibid tx staking create-validator \
 --amount=1000000unibi \
