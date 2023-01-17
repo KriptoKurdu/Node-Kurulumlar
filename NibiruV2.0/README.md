@@ -63,19 +63,25 @@ sudo systemctl stop nibid
 #### İlk Defa VALİDATOR Oluşturacaklar için ('cuzdanAdiniz' Kısmını kendinize göre değiştirin)
 ```
 nibid tx staking create-validator \
---amount=1000000unibi \
+--amount=100000unibi \
 --pubkey=$(nibid tendermint show-validator) \
---moniker=monikerAdiniz \
+--moniker=monikerAdi \
 --chain-id=nibiru-testnet-2 \
---commission-rate=0.05 \
---commission-max-rate=0.20 \
---commission-max-change-rate=0.01 \
---min-self-delegation=1 \
---from=cuzdanAdiniz \
---gas-adjustment=1.4 \
---gas=auto \
---gas-prices=0.025unibi \
+--commission-rate="0.1" \
+--commission-max-rate="0.10" \
+--commission-max-change-rate="0.01" \
+--min-self-delegation="1" \
+--fees=10000unibi \
+--from=cuzdanAdi \
 -y
 ```
+
+Delege Etmek için
+```
+nibid tx staking delegate validator_adresi 99500000unibi --from wallet --chain-id nibiru-testnet-2 --fees 5000unibi
+```
+
+
+
 
 
