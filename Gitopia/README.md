@@ -170,7 +170,7 @@ gitopiad keys add cüzdanAdiniz
 ```
 
 #### Faucet
-[(https://gitopia.com/home)](https://gitopia.com/home) 
+[(https://gitopia.com/home)](https://gitopia.com/home)] 
 
 
 
